@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="match_parent"
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white">
+
+    <TextView
+        android:id="@+id/indextitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="第1页" />
+
+    <ImageView
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading" />
+</LinearLayout>

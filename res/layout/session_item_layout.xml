@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" 
+    android:padding="6dp">
+
+    <com.gy.widget.Image.CircleImageView
+        android:id="@+id/session_item_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="4dp"
+        android:src="@drawable/face" />
+	
+     <TextView
+            android:id="@+id/ston"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/session_item_icon"
+             />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_toRightOf="@+id/ston">
+
+        <TextView
+            android:id="@+id/session_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="人名"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/session_item_latestcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="会话内容"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.gy.widget.Image.CircleImageView
+        android:id="@+id/circleImageView1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

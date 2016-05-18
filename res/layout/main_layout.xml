@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myradio="http://schemas.android.com/apk/res/com.just.weike"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.impl.activity.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_bottom_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.gy.widget.radiobutton.MyRadioButton
+            android:id="@+id/homerb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="主页"
+            android:textColor="@drawable/main_color_selector"
+            myradio:drawableTop="@drawable/main_home_selector"
+            myradio:rbdrawableSize="54dp" />
+
+        <com.gy.widget.radiobutton.MyRadioButton
+            android:id="@+id/classifyrb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="分类"
+            android:textColor="@drawable/main_color_selector"
+            myradio:drawableTop="@drawable/main_classify_selector"
+            myradio:rbdrawableSize="54dp" />
+
+        <com.gy.widget.radiobutton.MyRadioButton
+            android:id="@+id/messagerb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="通信"
+            android:textColor="@drawable/main_color_selector"
+            myradio:drawableTop="@drawable/main_message_selector"
+            myradio:rbdrawableSize="54dp" />
+
+        <com.gy.widget.radiobutton.MyRadioButton
+            android:id="@+id/settingrb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/little_space"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="设置"
+            android:textColor="@drawable/main_color_selector"
+            myradio:drawableTop="@drawable/main_setting_selector"
+            myradio:rbdrawableSize="54dp" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_space" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.gy.widget.Image.CircleImageView 
+                android:id="@+id/replyer_face"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/face"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/reply_newicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:src="@drawable/conericon" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/reply_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="标题"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/reply_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="回复内容"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:id="@+id/reply_uploader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传者"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/reply_uploaddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="2015/9/1"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/reply_index_gl_item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dp"
+                    android:text=""
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/reply_readcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+</LinearLayout>

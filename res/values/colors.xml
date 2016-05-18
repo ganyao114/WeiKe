@@ -1,0 +1,67 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    --><color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#3F51B5</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="black">#000000</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    
+    
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    
+    <color name="green">#00FF00</color>
+	<color name="thumbColor">#66aaaaaa</color>
+	
+	<color name="red">#C00D0C</color>
+	
+	<color name="normal_bg_color">#66E0DFE0</color>
+    <color name="normal_orange_color">#FF6633</color>
+    <color name="gray">#696969</color>
+    <color name="location_city_bg">#e1e1e0</color>
+    
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="common_white">#ffffff</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#e62f2f</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f1930d</color>
+    <!-- For safe cases -->
+    <color name="common_green">#60990c</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+    <color name="page_viewer_margin_color">#007800</color>
+</resources>

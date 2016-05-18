@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_space" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/title_bookcover"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_empty_dish" />
+
+            <ImageView
+                android:id="@+id/title_newicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:src="@drawable/conericon" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_booknametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="书名"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/title_summarytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="简介内容"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:id="@+id/title_uploader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传者"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/myPrimaryColor" />
+
+                <TextView
+                    android:id="@+id/title_uploaddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="2015/9/1"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/title_index_gl_item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dp"
+                    android:text=""
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/title_readcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

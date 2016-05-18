@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/normal_bg_color" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/booksize"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:text="TextView"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg_color" />
+
+        <TextView
+            android:id="@+id/bookkind"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:text="TextView"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/normal_bg_color" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/bookpages"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:text="TextView"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg_color" />
+
+        <TextView
+            android:id="@+id/bookauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:text="作者"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/normal_bg_color" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/download"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="下载"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg_color" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/more"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="详细"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg_color" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/detail"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="收藏"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg_color" />
+
+        <TextView
+            android:id="@+id/read"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/read"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="阅读"
+            android:textColor="@color/gray" />
+    </TableRow>
+
+</TableLayout>

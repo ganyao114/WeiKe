@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微课</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_pdf">ShowPdfActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_classify_list">ClassifyListActivity</string>
+    <string name="title_activity_read_view">ReadViewActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_comment">CommentActivity</string>
+
+</resources>
