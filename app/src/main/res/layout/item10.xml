@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:showIn="@layout/content_lar_tab10_list">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/column1content"
+        android:orientation="vertical">
+        <com.gy.just.VoltageMonitor.View.Widget.AutoScrollTextView
+            android:id="@+id/t10_id"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="安装地址"
+            android:background="@color/gray"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/normal_bg_color" />
+
+    </LinearLayout>
+
+    <com.gy.myframework.UI.customwidget.mutihostlist.InterceptScrollContainer
+        android:id="@+id/scroollContainter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/column1content"
+        android:focusable="false" >
+
+        <com.gy.myframework.UI.customwidget.mutihostlist.MyHScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_citykind"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="城农网"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_install"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="公司名称"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_kind"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="测点类型"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_vollevel"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="电压等级"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_overup1_cut"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="超上1档扣分"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_overup2_cut"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="超上2档扣分"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_overup3_cut"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="超上3档扣分"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_overup4_cut"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="超上4档扣分"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t10_overupsum_cut"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="超上总扣分"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+
+                    </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/t10_overdn1_cut"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="超下1档扣分"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_bg_color" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/t10_overdn2_cut"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="超下2档扣分"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_bg_color" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/t10_overdn3_cut"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="超下3档扣分"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_bg_color" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/t10_overdn4_cut"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="超下4档扣分"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_bg_color" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/t10_overdnsum_cut"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="超下总扣分"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_bg_color" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_bg_color" />
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/t10_sum_cut"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="总扣分"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_bg_color" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </com.gy.myframework.UI.customwidget.mutihostlist.MyHScrollView>
+    </com.gy.myframework.UI.customwidget.mutihostlist.InterceptScrollContainer>
+
+</RelativeLayout>

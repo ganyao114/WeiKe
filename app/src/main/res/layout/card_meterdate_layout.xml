@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--仪表考勤卡片-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <com.gy.myframework.UI.customwidget.calendar2.CalendarView
+        android:id="@+id/calendar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.gy.myframework.UI.customwidget.calendar2.CalendarView>
+
+    <ProgressBar
+        android:id="@+id/meterdate_loading_per"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:indeterminate="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+
+</android.support.v7.widget.CardView>

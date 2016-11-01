@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:showIn="@layout/content_lar_tab_list">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/column1content"
+        android:orientation="vertical">
+        <com.gy.just.VoltageMonitor.View.Widget.AutoScrollTextView
+            android:id="@+id/t02_id"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="安装地址"
+            android:background="@color/gray"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/normal_bg_color" />
+
+    </LinearLayout>
+
+    <com.gy.myframework.UI.customwidget.mutihostlist.InterceptScrollContainer
+        android:id="@+id/scroollContainter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/column1content"
+        android:focusable="false" >
+
+        <com.gy.myframework.UI.customwidget.mutihostlist.MyHScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_kind"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="ABCD"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_installlocation"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="仪表ID"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_unit"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="所属单位"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_isol"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="是否上线"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_mindatas"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="分钟数据"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常2"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常3"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常4"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e5"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常5"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e6"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常6"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e7"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常7"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e8"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常8"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_e9"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="异常9"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_upper"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="超上限"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_downner"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="超下限"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/t02_sum"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="总评"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/normal_bg_color" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/normal_bg_color" />
+            </LinearLayout>
+
+        </com.gy.myframework.UI.customwidget.mutihostlist.MyHScrollView>
+    </com.gy.myframework.UI.customwidget.mutihostlist.InterceptScrollContainer>
+
+</RelativeLayout>

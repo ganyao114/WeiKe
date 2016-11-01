@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/vol_list">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.gy.myframework.UI.view.recyclerview.header.RecyclerViewHeader
+        android:id="@+id/vol_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+            <TextView
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/normal_bg_color" />
+            <include layout="@layout/layout_tabvolinfo_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.gy.myframework.UI.view.recyclerview.header.RecyclerViewHeader>
+
+    <include layout="@layout/layout_tabvolinfo_tips"
+        android:id="@+id/tabtips_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

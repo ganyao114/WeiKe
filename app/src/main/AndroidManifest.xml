@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gy.just.VoltageMonitor">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+
+    <application
+        android:name=".Control.Application.MyAppliction"
+        android:allowBackup="true"
+        android:icon="@drawable/app_cover"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.Activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.TopicDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_topic_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".View.Activity.NewTopicActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".View.Activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".View.Activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".View.Activity.TabViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".View.Activity.UserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_user"
+            android:parentActivityName=".View.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gy.just.VoltageMonitor.View.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".View.Activity.TabMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_tab_main"
+            android:parentActivityName=".View.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gy.just.VoltageMonitor.View.Activity.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".Control.Service.NotifyService"
+            android:exported="false" />
+
+        <activity
+            android:name=".View.Activity.LarTabListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_lar_tab_list"
+            android:launchMode="singleTop"
+            android:parentActivityName=".View.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gy.just.VoltageMonitor.View.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".View.Activity.PreviewColumnTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_preview_column_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.LineTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_line_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.DetaillInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_detaill_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.StartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".View.Activity.CollectAndHistoryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_collect_and_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".Control.Service.NotiService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".View.Activity.MeterInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_meter_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.Activity.HelloActivity"></activity>
+        <activity
+            android:name=".View.Activity.SubLartabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_sub_lartab"
+            android:parentActivityName=".View.Activity.LarTabListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gy.just.VoltageMonitor.View.Activity.LarTabListActivity" />
+        </activity>
+        <activity
+            android:name=".View.Activity.YunWeiActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_yun_wei"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.OnlineSatueActivity"
+            android:label="@string/title_activity_online_satue"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Activity.AppLoadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.Activity.DataMaintanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="数据维护状态"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".View.Activity.SettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="设置" />
+
+        <receiver
+            android:name=".Control.Receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

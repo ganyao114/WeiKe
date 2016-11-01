@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_36pt_2x"
+            android:title="查询仪表" />
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="收藏的仪表" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="数据维护状态" />
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/ic_place_24dp"
+            android:title="附近的仪表" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="设置" />
+    </group>
+
+    <item android:title="系统切换">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="供应系统" />-->
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="现场运维系统" />
+        </menu>
+    </item>
+
+</menu>

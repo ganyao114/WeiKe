@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <include layout="@layout/card_t06_enter"
+            android:id="@+id/enter_t06_bt" />
+
+        <include layout="@layout/card_olstatue_enter"
+            android:id="@+id/enter_olstatue_bt" />
+
+        <include layout="@layout/card_t12_enter"
+            android:id="@+id/enter_t12_bt" />
+        <!--<include layout="@layout/card_user_email" />-->
+
+        <!--<include layout="@layout/card_user_location" />-->
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

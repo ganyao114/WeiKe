@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/newslist">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    <com.gy.myframework.UI.view.recyclerview.header.RecyclerViewHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.gy.myframework.UI.customwidget.mypageview.MyPageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mypageview">
+            </com.gy.myframework.UI.customwidget.mypageview.MyPageView>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+                    <TabHost
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/pass_rate"
+                            android:clickable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableTop="@drawable/radio"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="电压合格率报表"
+                            android:textColor="@color/gray" />
+                    </TabHost>
+                    <TabHost
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/cut_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableTop="@drawable/paihang"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="扣分项报表"
+                            android:textColor="@color/gray" />
+                    </TabHost>
+                    <TabHost
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/lowvol_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableTop="@drawable/birthday"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:text="低电压报表"
+                            android:textColor="@color/gray" />
+                    </TabHost>
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_height="1dip"
+                android:layout_width="match_parent"
+                android:background="#66E0DFE0" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/paihang"
+                    android:layout_gravity="start"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/tipcover1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|left"
+                    android:text="仪表运行信息"
+                    android:clickable="true"
+                    android:layout_toRightOf="@+id/tipcover1" />
+                <TextView
+                    android:id="@+id/morebt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical|left"
+                    android:layout_alignParentRight="true"
+                    android:text="仪表本月运行状态图>>   " />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/normal_bg_color" />
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchtab">
+            </android.support.design.widget.TabLayout>
+
+
+            <TextView
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/normal_bg_color" />
+
+            <!--<include layout="@layout/layout_tabvolinfo_tips"-->
+                <!--android:id="@+id/tabtips"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+
+    </com.gy.myframework.UI.view.recyclerview.header.RecyclerViewHeader>
+
+    <include layout="@layout/layout_tabvolinfo_tips"
+        android:id="@+id/tabtips_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</FrameLayout>
