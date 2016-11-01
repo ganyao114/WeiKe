@@ -24,12 +24,17 @@ public class SettingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         getFragmentManager().beginTransaction().replace(R.id.content_frame, new SettingFragment()).commit();
-        WallpaperManager wallpaperManager = WallpaperManager.getInstance(this);
-        try {
-            wallpaperManager.setBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.login_back2));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                WallpaperManager wallpaperManager = WallpaperManager.getInstance(SettingActivity.this);
+                try {
+                    wallpaperManager.setBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.login_back2));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
 
     }
 
